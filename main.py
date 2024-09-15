@@ -6,6 +6,10 @@ try:
     from colorama import Fore, Style, init
     from requests import Session
     from datetime import datetime
+    
+    # Initialize colorama
+    init()
+    
 except ModuleNotFoundError:
     os.system('pip install pystyle')
     os.system('pip install colorama')
